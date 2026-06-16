@@ -401,7 +401,7 @@ enterButton.MouseButton1Click:Connect(function()
                     if bambooBtn then
                         performSingleIsolatedClick(bambooBtn)
                         successfullyAdded = successfullyAdded + 1
-                        task.wait(0.1) -- Быстрая задержка между кликами
+                        task.wait(0.03) -- Быстрая задержка между кликами
                     else
                         addLog("No more bamboo available in UI")
                         break
@@ -418,7 +418,7 @@ enterButton.MouseButton1Click:Connect(function()
                         
                         remainingBamboo = remainingBamboo - successfullyAdded
                         addLog("Batch sent. Remaining: " .. remainingBamboo)
-                        task.wait(2.0)
+                        task.wait(1.0)
                     end
                 else
                     addLog("Bamboo not found at all")
