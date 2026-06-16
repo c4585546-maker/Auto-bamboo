@@ -401,7 +401,7 @@ enterButton.MouseButton1Click:Connect(function()
                     if bambooBtn then
                         performSingleIsolatedClick(bambooBtn)
                         successfullyAdded = successfullyAdded + 1
-                        task.wait(0.03) -- Быстрая задержка между кликами
+                        task.wait(0.01) -- Быстрая задержка между кликами
                     else
                         addLog("No more bamboo available in UI")
                         break
