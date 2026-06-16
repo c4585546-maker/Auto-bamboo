@@ -1,4 +1,3 @@
--- Безопасное ожидание загрузки
 if not game:IsLoaded() then
     pcall(function() game.Loaded:Wait() end)
 end
